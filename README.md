@@ -25,31 +25,62 @@ To run the full JUnit 5 test suite covering validation edge cases and calculatio
 mvn test
 
 ## Project structure
+## 📁 Project Structure
+
+
+```text
+
+.
+
 ├── pom.xml
-└── src/
-    ├── main/
-    │   └── java/
-    │       └── com/
-    │           └── paynestsystem/
-    │               ├── app/
+
+└── src
+
+    ├── main
+
+    │   └── java
+
+    │       └── com
+
+    │           └── paynestsystem
+
+    │               ├── app
+
     │               │   └── PayNestApplication.java
-    │               ├── domain/
+
+    │               ├── domain
+
     │               │   ├── Customer.java
+
     │               │   ├── Order.java
+
     │               │   ├── OrderItem.java
+
     │               │   └── Product.java
-    │               └── service/
+
+    │               └── service
+
     │                   └── OrderService.java
-    └── test/
-        └── java/
-            └── com/
-                └── paynestsystem/
-                    ├── domain/
+
+    └── test
+
+        └── java
+
+            └── com
+
+                └── paynestsystem
+
+                    ├── domain
+
                     │   ├── OrderItemTest.java
-                    │   └── OrderItemValidationTest.java
-                    └── service/
+
+                    │   ├── OrderItemValidationTest.java
+
+                    │   └── OrderTest.java
+
+                    └── service
+
                         └── OrderServiceTest.java
 
-
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=24000849&assignment_repo_type=AssignmentRepo)
-# Merchant-order-desk-and-catalogue-engine
+capstone-submission
+ 
