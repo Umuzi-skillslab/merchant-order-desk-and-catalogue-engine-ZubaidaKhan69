@@ -27,20 +27,41 @@ To run the full JUnit 5 test suite covering validation edge cases and calculatio
 mvn test
 
 ## Project structure
+## 📁 Project Structure
+
+
+```text
+
+.
+
 ├── pom.xml
-└── src/
-    ├── main/
-    │   └── java/
-    │       └── com/
-    │           └── paynestsystem/
-    │               ├── app/
+
+└── src
+
+    ├── main
+
+    │   └── java
+
+    │       └── com
+
+    │           └── paynestsystem
+
+    │               ├── app
+
     │               │   └── PayNestApplication.java
-    │               ├── domain/
+
+    │               ├── domain
+
     │               │   ├── Customer.java
+
     │               │   ├── Order.java
+
     │               │   ├── OrderItem.java
+
     │               │   └── Product.java
-    │               └── service/
+
+    │               └── service
+
     │                   └── OrderService.java
     └── test/
         └── java/
@@ -52,6 +73,7 @@ mvn test
                     └── service/
                         └── OrderServiceTest.java
 
+                    │   ├── OrderItemValidationTest.java
 
 ## Design decisions
 - Product, Customer, Order and OrderItem are implemented as domain entities.
