@@ -10,19 +10,19 @@ class OrderItemValidationTest {
  
     @Test
     void quantityMustBeGreaterThanZero() {
- 
         Product laptop =
                 new Product(1, "Laptop", 12000);
- 
-        Product mouse =
-                new Product(2, "Mouse", 200);
-
-        Product keyboard = 
-                new Product(3, "Keyboard", 500);
  
         assertThrows(
                 IllegalArgumentException.class,
                 () -> new OrderItem(laptop, 0)
+        );
+    }   
+    
+    @Test
+    void productCannotBeNull() {
+        assertThrows(IllegalArgumentException.class, 
+                () -> new OrderItem(null, 1)
         );
     }
 }

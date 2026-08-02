@@ -3,7 +3,6 @@ package com.paynestsystem.app;
 import com.paynestsystem.domain.Customer;
 import com.paynestsystem.domain.Order;
 import com.paynestsystem.domain.Product;
-import com.paynestsystem.domain.OrderItem;
 
 public class PayNestApplication {
 
@@ -18,8 +17,9 @@ public class PayNestApplication {
 
         order.addItem(laptop, 1);
         order.addItem(mouse, 2);
-        order.addItem(keyboard, 3);
-
+        order.addItem(keyboard, 3);    
+        
         order.printSummary();
+    
     }
 }
