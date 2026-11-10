@@ -7,7 +7,7 @@
 This project was developed for the PayNest Capstone Project and combines the requirements of:
 
 - Capstone 1: Merchant Order Desk and Catalogue Engine
-- Capstone 2: Unified Checkout Across Payment Rails
+- Capstone 3: Unified Checkout Across Payment Rails
 
 The application provides a lightweight commerce system for small merchants to manage products, customers, and orders while supporting a unified checkout process through multiple payment methods.
 
