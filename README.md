@@ -143,6 +143,7 @@ can be added by creating a new class that implements PaymentMethod without modif
 This follows the Open/Closed Principle by allowing the system to be extended without changing existing functionality.
 
 Project Structure
+
 ├── pom.xml
 
 └── src
