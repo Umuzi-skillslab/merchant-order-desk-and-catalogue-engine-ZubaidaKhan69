@@ -322,8 +322,3 @@ New payment methods can be added without modifying existing checkout functionali
 IMI Trainee Java Developer
 
 ---
-
-
-✅ Extensible Checkout Architecture
-
-✅ Ready for Submission
