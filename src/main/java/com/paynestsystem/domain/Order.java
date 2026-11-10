@@ -3,6 +3,8 @@ package com.paynestsystem.domain;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import com.paynestsystem.payment.PaymentMethod;
+import com.paynestsystem.payment.PaymentProcessor;
 
 public class Order {
 
@@ -64,5 +66,17 @@ public class Order {
         System.out.println("--------------------------------");
         System.out.printf("Grand Total: R%.2f%n", calculateTotal());
         System.out.println("================================");
+    }
+    public boolean checkout (PaymentMethod paymentMethod) {
+        double total = calculateTotal();
+
+        PaymentProcessor processor = new PaymentProcessor();
+        
+        boolean success = processor.processPayment(paymentMethod, total);
+        
+        if (success) {
+            System.out.println("Order #" + id + " has been successfully processed.");
+        } 
+        return success;
     }
 }
