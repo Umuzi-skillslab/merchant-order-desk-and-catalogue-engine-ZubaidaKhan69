@@ -1,7 +1,5 @@
 package com.paynestsystem.domain;
 
-import com.paynestsystem.domain.Product;
-import com.paynestsystem.domain.OrderItem;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
